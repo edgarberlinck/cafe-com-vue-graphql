@@ -13,4 +13,9 @@ type Musica {
 
 type Query {
   listarGeneros(descricao: String): [Genero]
+  listarMusicas(term: String): [Musica]
+}
+
+type Mutation {
+  salvarMusica(id: ID, nome: String!, artista: String!, ano: Int!, generoId: Int!): Musica!
 }

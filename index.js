@@ -1,10 +1,14 @@
 const { GraphQLServer } = require('graphql-yoga')
-const { GenerosDao } = require('./dao')
+const { GenerosDao, MusicasDao } = require('./dao')
 const typeDefs = './schema.graphql'
 
 const resolvers = {
   Query: {
-    listarGeneros: (root, { descricao }) => GenerosDao.listar(descricao)
+    listarGeneros: (root, { descricao }) => GenerosDao.listar(descricao),
+    listarMusicas: (root, { term }) => MusicasDao.listar(term)
+  },
+  Mutation: {
+    salvarMusica: (root, params) => MusicasDao.salvar(params)
   }
 }
 

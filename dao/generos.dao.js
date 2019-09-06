@@ -10,3 +10,8 @@ exports.listar = async descricao => {
   const data = await genero.findAll({ where, raw: true })
   return data
 }
+
+exports.get = async id => {
+  const data = await genero.findByPk(id, { raw: true })
+  return data
+}
