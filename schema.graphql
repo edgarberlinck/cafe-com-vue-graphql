@@ -18,4 +18,5 @@ type Query {
 
 type Mutation {
   salvarMusica(id: ID, nome: String!, artista: String!, ano: Int!, generoId: Int!): Musica!
+  removerMusica(id: ID): ID
 }

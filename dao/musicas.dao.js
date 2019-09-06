@@ -52,3 +52,8 @@ exports.listar = async term => {
     }
   }))
 }
+
+exports.remover = async id => {
+  await musica.destroy({ where: { id } })
+  return id
+}

@@ -8,7 +8,8 @@ const resolvers = {
     listarMusicas: (root, { term }) => MusicasDao.listar(term)
   },
   Mutation: {
-    salvarMusica: (root, params) => MusicasDao.salvar(params)
+    salvarMusica: (root, params) => MusicasDao.salvar(params),
+    removerMusica: (root, { id }) => MusicasDao.remover(id)
   }
 }
 
