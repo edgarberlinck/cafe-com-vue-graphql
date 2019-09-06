@@ -7,7 +7,7 @@ Este projeto é o mesmo utilizado ma apresentação de GraphQL do CAfé com VUE 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 ## Sobre o projeto
 
-Este projeto usa o GraphQL Yoda, Node.js, Sequelize e sqlite3. As dependências sâo gerenciadas pelo Yarn
+Este projeto usa o GraphQL Yoga, Node.js, Sequelize e sqlite3. As dependências sâo gerenciadas pelo Yarn
 
 ## Primeiros Passos
 
@@ -15,7 +15,7 @@ Clonar este repositório, use o comando `yarn` para atualizar as dependências e
 
 ## Como usar
 
-> TODO
+Execute o projeto usando o comando `yarn dev` ou `yarn start`. Abra o navegador em `http://localhost:4000` e diverta-se!
 
 Dúvidas? Abrir uma issue.
  
