@@ -1,0 +1,16 @@
+type Genero {
+  id: ID!,
+  descricao: String!
+}
+
+type Musica {
+  id: ID!,
+  nome: String!,
+  artista: String!,
+  ano: Int,
+  genero: Genero!
+}
+
+type Query {
+  listarGeneros(descricao: String): [Genero]
+}
